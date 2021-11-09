@@ -117,6 +117,7 @@
             this.btn_cadastrar.TabIndex = 8;
             this.btn_cadastrar.Text = "Cadastrar";
             this.btn_cadastrar.UseVisualStyleBackColor = true;
+            this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
             // 
             // btn_editar
             // 
@@ -126,6 +127,7 @@
             this.btn_editar.TabIndex = 9;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // btn_excluir
             // 
@@ -135,6 +137,7 @@
             this.btn_excluir.TabIndex = 10;
             this.btn_excluir.Text = "Excluir";
             this.btn_excluir.UseVisualStyleBackColor = true;
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // dgv_listaTimes
             // 
