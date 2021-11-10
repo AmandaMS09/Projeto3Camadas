@@ -40,13 +40,15 @@
             this.btn_editar = new System.Windows.Forms.Button();
             this.btn_excluir = new System.Windows.Forms.Button();
             this.dgv_listaTimes = new System.Windows.Forms.DataGridView();
+            this.txt_id = new System.Windows.Forms.TextBox();
+            this.lbl_id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listaTimes)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_nome
             // 
             this.lbl_nome.AutoSize = true;
-            this.lbl_nome.Location = new System.Drawing.Point(12, 9);
+            this.lbl_nome.Location = new System.Drawing.Point(80, 13);
             this.lbl_nome.Name = "lbl_nome";
             this.lbl_nome.Size = new System.Drawing.Size(35, 13);
             this.lbl_nome.TabIndex = 0;
@@ -55,7 +57,7 @@
             // lbl_presidente
             // 
             this.lbl_presidente.AutoSize = true;
-            this.lbl_presidente.Location = new System.Drawing.Point(184, 9);
+            this.lbl_presidente.Location = new System.Drawing.Point(219, 13);
             this.lbl_presidente.Name = "lbl_presidente";
             this.lbl_presidente.Size = new System.Drawing.Size(57, 13);
             this.lbl_presidente.TabIndex = 1;
@@ -64,7 +66,7 @@
             // lbl_dataFundacao
             // 
             this.lbl_dataFundacao.AutoSize = true;
-            this.lbl_dataFundacao.Location = new System.Drawing.Point(354, 9);
+            this.lbl_dataFundacao.Location = new System.Drawing.Point(367, 13);
             this.lbl_dataFundacao.Name = "lbl_dataFundacao";
             this.lbl_dataFundacao.Size = new System.Drawing.Size(55, 13);
             this.lbl_dataFundacao.TabIndex = 2;
@@ -73,7 +75,7 @@
             // lbl_historia
             // 
             this.lbl_historia.AutoSize = true;
-            this.lbl_historia.Location = new System.Drawing.Point(12, 81);
+            this.lbl_historia.Location = new System.Drawing.Point(12, 85);
             this.lbl_historia.Name = "lbl_historia";
             this.lbl_historia.Size = new System.Drawing.Size(42, 13);
             this.lbl_historia.TabIndex = 3;
@@ -81,29 +83,30 @@
             // 
             // txt_nome
             // 
-            this.txt_nome.Location = new System.Drawing.Point(15, 37);
+            this.txt_nome.Location = new System.Drawing.Point(83, 41);
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(143, 20);
+            this.txt_nome.Size = new System.Drawing.Size(123, 20);
             this.txt_nome.TabIndex = 4;
             // 
             // txt_presidente
             // 
-            this.txt_presidente.Location = new System.Drawing.Point(187, 37);
+            this.txt_presidente.Location = new System.Drawing.Point(222, 41);
             this.txt_presidente.Name = "txt_presidente";
-            this.txt_presidente.Size = new System.Drawing.Size(143, 20);
+            this.txt_presidente.Size = new System.Drawing.Size(131, 20);
             this.txt_presidente.TabIndex = 5;
             // 
             // dtp_dataFundacao
             // 
             this.dtp_dataFundacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_dataFundacao.Location = new System.Drawing.Point(355, 37);
+            this.dtp_dataFundacao.Location = new System.Drawing.Point(368, 41);
             this.dtp_dataFundacao.Name = "dtp_dataFundacao";
-            this.dtp_dataFundacao.Size = new System.Drawing.Size(109, 20);
+            this.dtp_dataFundacao.Size = new System.Drawing.Size(95, 20);
             this.dtp_dataFundacao.TabIndex = 6;
+            this.dtp_dataFundacao.Value = new System.DateTime(2021, 11, 9, 0, 0, 0, 0);
             // 
             // txt_historia
             // 
-            this.txt_historia.Location = new System.Drawing.Point(15, 108);
+            this.txt_historia.Location = new System.Drawing.Point(15, 112);
             this.txt_historia.Multiline = true;
             this.txt_historia.Name = "txt_historia";
             this.txt_historia.Size = new System.Drawing.Size(449, 80);
@@ -111,7 +114,7 @@
             // 
             // btn_cadastrar
             // 
-            this.btn_cadastrar.Location = new System.Drawing.Point(77, 204);
+            this.btn_cadastrar.Location = new System.Drawing.Point(77, 208);
             this.btn_cadastrar.Name = "btn_cadastrar";
             this.btn_cadastrar.Size = new System.Drawing.Size(75, 23);
             this.btn_cadastrar.TabIndex = 8;
@@ -121,7 +124,7 @@
             // 
             // btn_editar
             // 
-            this.btn_editar.Location = new System.Drawing.Point(202, 204);
+            this.btn_editar.Location = new System.Drawing.Point(202, 208);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(75, 23);
             this.btn_editar.TabIndex = 9;
@@ -131,7 +134,7 @@
             // 
             // btn_excluir
             // 
-            this.btn_excluir.Location = new System.Drawing.Point(328, 204);
+            this.btn_excluir.Location = new System.Drawing.Point(328, 208);
             this.btn_excluir.Name = "btn_excluir";
             this.btn_excluir.Size = new System.Drawing.Size(75, 23);
             this.btn_excluir.TabIndex = 10;
@@ -142,16 +145,35 @@
             // dgv_listaTimes
             // 
             this.dgv_listaTimes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listaTimes.Location = new System.Drawing.Point(12, 247);
+            this.dgv_listaTimes.Location = new System.Drawing.Point(12, 251);
             this.dgv_listaTimes.Name = "dgv_listaTimes";
             this.dgv_listaTimes.Size = new System.Drawing.Size(451, 154);
             this.dgv_listaTimes.TabIndex = 11;
+            this.dgv_listaTimes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_listaTimes_CellClick);
+            // 
+            // txt_id
+            // 
+            this.txt_id.Location = new System.Drawing.Point(15, 41);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(51, 20);
+            this.txt_id.TabIndex = 13;
+            // 
+            // lbl_id
+            // 
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.Location = new System.Drawing.Point(12, 13);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(16, 13);
+            this.lbl_id.TabIndex = 12;
+            this.lbl_id.Text = "Id";
             // 
             // FrmTime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 413);
+            this.ClientSize = new System.Drawing.Size(476, 417);
+            this.Controls.Add(this.txt_id);
+            this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.dgv_listaTimes);
             this.Controls.Add(this.btn_excluir);
             this.Controls.Add(this.btn_editar);
@@ -167,6 +189,7 @@
             this.Name = "FrmTime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciamento de Times";
+            this.Load += new System.EventHandler(this.FrmTime_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listaTimes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,5 +210,7 @@
         private System.Windows.Forms.Button btn_editar;
         private System.Windows.Forms.Button btn_excluir;
         private System.Windows.Forms.DataGridView dgv_listaTimes;
+        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.Label lbl_id;
     }
 }
