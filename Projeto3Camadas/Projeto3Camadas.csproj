@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Projeto3Camadas</RootNamespace>
     <AssemblyName>Projeto3Camadas</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -69,8 +69,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\BLL\CadastroBLL.cs" />
     <Compile Include="Code\BLL\TimeBLL.cs" />
     <Compile Include="Code\DAL\AcessoBancoDados.cs" />
+    <Compile Include="Code\DTO\CadastroDTO.cs" />
     <Compile Include="Code\DTO\TimeDTO.cs" />
     <Compile Include="Ui\FrmCadastro.cs">
       <SubType>Form</SubType>

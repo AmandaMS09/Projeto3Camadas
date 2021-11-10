@@ -34,3 +34,5 @@ C:\Users\manda\Homes\POO\AplicacaoFutebol\Projeto3Camadas\bin\Debug\K4os.Compres
 C:\Users\manda\Homes\POO\AplicacaoFutebol\Projeto3Camadas\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\manda\Homes\POO\AplicacaoFutebol\Projeto3Camadas\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\manda\Homes\POO\AplicacaoFutebol\Projeto3Camadas\obj\Debug\Projeto3Camadas.exe.config
+H:\POO\AplicacaoFutebol\Projeto3Camadas\obj\Debug\Projeto3Camadas.Ui.FrmJogador.resources
+H:\POO\AplicacaoFutebol\Projeto3Camadas\obj\Debug\Projeto3Camadas.Ui.FrmTime.resources

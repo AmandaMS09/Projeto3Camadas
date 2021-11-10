@@ -13,7 +13,7 @@ namespace Projeto3Camadas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ui.FrmTime());
+            Application.Run(new FrmCadastro());
         }
     }
 }
